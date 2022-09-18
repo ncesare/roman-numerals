@@ -20,7 +20,6 @@ body {
     width: 60%;
     height: 400px;
     margin: 64px auto;
-    backdrop-filter: blur(20px);
     background-color: rgb(222, 234, 245, 0.5);
     border: 1px solid black;
     border-radius: 6px;
