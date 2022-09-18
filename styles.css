@@ -1,10 +1,10 @@
 @font-face {
-    font-family: "Trajanus Roman";
-    src: url(/fonts/TrajanusRoman.ttf);
+    font-family: "Antique Roman";
+    src: url(/fonts/AntiqueRoman-jVDG.ttf);
 }
 
 * {
-    font-family: "Trajanus Roman", serif;
+    font-family: "Antique Roman";
 }
 
 body {
@@ -25,26 +25,28 @@ body {
     border-radius: 6px;
 }
 
-
-
 input {
     height: 4rem;
     width: 20rem;
     min-width: 200px;
     font-size: 3rem;
+    padding-top: 8px;
 }
 
 input:invalid {
-    border: red solid 3px;
+    border: rgba(90, 0, 0, 0.836) solid 3px;
   }
 
 button {
     height: 3rem;
-    width: 6rem;
+    width: 8rem;
     font-size: 1.5rem;
+    border: 0;
+    border-radius: 6px;
+    background-color: rgb(218, 173, 114);
 }
 
 #integer {
     font-size: 2.5rem;
-    font-family: 'Trajanus Roman';
+    font-family: "Antique Roman";
 }
