@@ -34,6 +34,10 @@ input {
     font-size: 3rem;
 }
 
+input:invalid {
+    border: red solid 3px;
+  }
+
 button {
     height: 3rem;
     width: 6rem;

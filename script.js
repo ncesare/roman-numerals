@@ -9,6 +9,8 @@ convertBtn.addEventListener('click', () => {
     numeralText.setAttribute('placeholder', '');
     });
 
+numeralText.addEventListener('input', () => numeralText.value = numeralText.value.toUpperCase());
+
 function romanToInt(s) {
 	let numeral = [];
 	for (char of s) {
