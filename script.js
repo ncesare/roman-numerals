@@ -6,6 +6,7 @@ convertBtn.addEventListener('click', () => {
     const integer = romanToInt(numeralText.value);
     integerDisplay.textContent = `${numeralText.value} is ${integer} in Arabic numerals`;
     numeralText.value = '';
+    numeralText.setAttribute('placeholder', '');
     });
 
 function romanToInt(s) {
