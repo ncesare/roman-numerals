@@ -2,6 +2,8 @@ const numeralText = document.querySelector('#numeral');
 const convertBtn = document.querySelector('button');
 const integerDisplay = document.querySelector('#integer');
 
+const regex = new RegExp('[IVXLCDM]*')
+
 convertBtn.addEventListener('click', () => {
     const integer = romanToInt(numeralText.value);
     integerDisplay.textContent = `${numeralText.value} is ${integer} in Arabic numerals`;
@@ -9,7 +11,10 @@ convertBtn.addEventListener('click', () => {
     numeralText.setAttribute('placeholder', '');
     });
 
-numeralText.addEventListener('input', () => numeralText.value = numeralText.value.toUpperCase());
+numeralText.addEventListener('input', () => {
+    numeralText.value = numeralText.value.toUpperCase();
+    numeralText.value = numeralText.value.replace(/[^IVXLCDM]/, '');
+});
 
 function romanToInt(s) {
 	let numeral = [];

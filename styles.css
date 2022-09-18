@@ -27,7 +27,7 @@ body {
 
 input {
     height: 4rem;
-    width: 20rem;
+    width: 300px;
     min-width: 200px;
     font-size: 3rem;
     padding-top: 8px;
