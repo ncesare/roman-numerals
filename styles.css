@@ -46,6 +46,10 @@ button {
     background-color: rgb(218, 173, 114);
 }
 
+button:hover {
+    box-shadow: 4px 4px 4px rgb(85, 85, 85);
+}
+
 #integer {
     font-size: 2.5rem;
     font-family: "Antique Roman";
